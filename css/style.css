@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&family=Open+Sans&family=Poppins:wght@700&family=Work+Sans:wght@700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* style in body */
+body {
+    max-width: 1100px;
+    font-family: 'Courier New', Courier, monospace;
+}
