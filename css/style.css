@@ -10,11 +10,65 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #12495d;
+    position: relative;
 }
 
-main {
-    max-width: 1200px;
+header {
+    min-width: 250px;
+    position: absolute;
+    width: 100px;
+    background-color: #0c455a;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* nav style */
+header .header {
+    min-width: 250px;
+    background-color: #0C455A;
     min-height: 100vh;
+    padding: 50% 0;
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    margin: auto;
+    position: relative;
+    padding: 0 10px;
+    min-width: 240px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: auto;
+}
+
+.header nav ul li {
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #1CB6EE;
+    background-color: #12495d;
+    padding: 10px 15px 10px 35px;
+    display: inline-block;
+    margin-top: 5px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.header nav ul li a:hover {
+    color: #12495d;
+    background-color: #1CB6EE;
+    box-shadow: 2px 2px 5px rgb(132, 132, 132);
+}
+
+/*all section part style*/
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +131,43 @@ main {
     width: 100%;
     border-radius: 8px;
 }
+
+.mut,
+.working-process-items,
+.my-skill-container {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* my working process section style*/
 .working-title {
@@ -217,6 +308,16 @@ main {
 }
 
 /* My Work Experience section style */
+
+.timeline-box {
+    /* display: flex; */
+}
+
+
+.experience-container {
+    border: 2px solid;
+}
+
 .experience-date {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -246,4 +347,14 @@ main {
     color: #0C455A;
     margin-top: 8px;
     display: inline-block;
+}
+
+/* right part */
+.timeline ul li {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    list-style: none;
+    color: #7ccae7;
+    margin-top: 5px;
 }
