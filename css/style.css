@@ -3,21 +3,21 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 /* style in body */
 body {
-    max-width: 1100px;
     font-family: 'Courier New', Courier, monospace;
     background-color: #12495d;
+}
+
+main {
+    max-width: 1200px;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-main {
-    margin: 0 100px;
 }
 
 /*about-section style  */
@@ -70,6 +70,7 @@ main {
     margin-top: 40px;
     background-color: #275d70;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .my-img img {
@@ -83,12 +84,23 @@ main {
     font-size: 2em;
     font-weight: bold;
     color: #1cb6ee;
-    margin: 20px 0 20px 0;
+    margin: 30px 0 5px 0;
+}
+
+.hr-line {
+    border: 2px solid #7ccae7;
+    margin: 0 80px;
+}
+
+.hr-line-1 {
+    border: 2px solid #7ccae7;
+    margin: 0 140px 0 140px;
+    margin-bottom: 20px;
 }
 
 .working-process-item {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     padding: 50px;
     position: relative;
     background-color: #0C455A;
@@ -106,7 +118,7 @@ main {
     background: #1CB6EE;
     height: 150%;
     width: 300px;
-    animation: rod 4s linear infinite;
+    animation: rod 5s linear infinite;
 }
 
 .working-process-item::after {
@@ -156,12 +168,21 @@ main {
 
 /* my skills section style*/
 
-.skills-c-section-title {
+.skills-section-title {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
     color: #1cb6ee;
-    margin: 20px 0 50px 0;
+    margin: 20px 0 5px 0;
+}
+
+.hr-line-2 {
+    border: 2px solid #7ccae7;
+}
+
+.hr-line-3 {
+    border: 2px solid #7ccae7;
+    margin: 2px 90px 0 90px;
 }
 
 .my-skill-container {
@@ -171,14 +192,11 @@ main {
 }
 
 .skill-item {
-    height: 450px;
+    /* height: 450px; */
     width: 300px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.item-3 {
-    margin-top: 70px;
+    margin-top: 50px;
+    /* text-align: center; */
+    padding: 10px;
 }
 
 .skill-item img {
@@ -196,4 +214,36 @@ main {
     color: #7ccae7;
     font-size: 18px;
     margin-top: 20px;
+}
+
+/* My Work Experience section style */
+.experience-date {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #1CB6EE;
+    font-weight: 500;
+}
+
+.dev-intern {
+    font-size: 15px;
+    color: #7ccae7;
+}
+
+.company-name {
+    margin: 5px 0;
+    color: #1CB6EE;
+}
+
+.experience-item {
+    line-height: 25px;
+    margin: 5px;
+}
+
+.experience-item span {
+    padding: 10px;
+    background-color: #1CB6EE;
+    color: #0C455A;
+    margin-top: 8px;
+    display: inline-block;
 }
