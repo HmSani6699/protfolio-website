@@ -67,7 +67,7 @@ header .header {
     box-shadow: 2px 2px 5px rgb(132, 132, 132);
 }
 
-/*all section part style*/
+/*min*/
 main {
     display: flex;
     align-items: center;
@@ -75,6 +75,17 @@ main {
 }
 
 /*about-section style  */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about-section,
+.my-img {
+    margin-left: 60px;
+}
 
 .about-title {
     font-size: 2em;
